@@ -13,7 +13,12 @@
 	['licenseplate'] 				 = {['name'] = 'licenseplate', 			  	  	['label'] = 'License Plate', 			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'licenseplate.png', 			['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = ''},
 ```
 
-* Navigate to your inventory >server > main.lua and paste the following around lines 1550-1579 the lines may vary on your inventory but look for the similarities in the snippets
+* Navigate to your inventory >server > main.lua around lines 1550-1579 the lines may vary on your inventory you can look for the following snippet
+```lua
+	elseif itemData["name"] == "markedbills" then
+		info.worth = math.random(5000, 10000)
+```
+and paste the following snippet below or above it does not matter
 ```lua
 	elseif itemData["name"] == "licenseplate" then
 		info.plate = tostring(QBCore.Shared.RandomInt(2) .. QBCore.Shared.RandomStr(2) .. QBCore.Shared.RandomInt(2) .. QBCore.Shared.RandomStr(2))
