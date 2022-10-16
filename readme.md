@@ -1,3 +1,5 @@
+![kevin-licenseplates](https://user-images.githubusercontent.com/89563654/196052842-b97193b0-6f25-44c9-88ca-9866a017c6ae.jpg)
+
 # Dependencies
 - QBCore
 - qb-inventory/lj-inventory
